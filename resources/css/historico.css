@@ -1,0 +1,65 @@
+/* Estilização geral do body */
+body {
+    background-image: url('fundo\ site.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Cabeçalho */
+.header {
+    background-color: #2B4A9D;
+    color: #f6f6f6;
+    padding: 20px;
+    text-align: left;
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: center; 
+    padding: 20px; 
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto; 
+    background: #ffffff;
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+/* Estilização da tabela */
+table {
+    width: 100%; 
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #2B4A9D;
+    color: white;
+}
+
+tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    table {
+        font-size: 14px; 
+    }
+}
