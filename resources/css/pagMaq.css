@@ -1,0 +1,128 @@
+body {
+  background-image: url('fundo\ site.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #2B4A9D;
+  color: #f6f6f6;
+  padding: 20px;
+  text-align: left;
+}
+
+div {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 30px auto;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.elemento {
+  flex: 1;
+  background-color: #ffffff;
+  border: 10px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  margin-right: 20px; /* Espaço entre elementos */
+}
+
+.elemento2 {
+  flex: 1;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-right: 20px; /* Espaço entre elementos */
+}
+
+.elemento2 img {
+  max-width: 100%;
+  height: auto;
+}
+
+.elemento3 {
+  width: 495px;
+  height: 450px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+}
+
+.formulario {
+  flex: 1;
+  background-color: #ffffff;
+  border: 5px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+
+.formulario input {
+  color: gray;
+  width: 300px;
+  height: 25px;
+  border-radius: 10px;
+  margin: 8px;
+}
+
+.formulario input[type='checkbox'] {
+  width: auto;
+}
+
+textarea {
+  width: 300px;
+  height: 200px;
+  margin: 8px;
+  border-radius: 10px;
+}
+
+.caixa-selecao {
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.botao {
+  border: 1px solid black;
+  padding: 20px 100px;
+  border-radius: 10px;
+  line-height: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+a {
+  border: 1px solid black;
+  padding: 15px 100px;
+  border-radius: 10px;
+  line-height: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .elemento, .elemento2 {
+    max-width: 100%;
+    margin-bottom: 20px; /* Espaço entre elementos no layout em coluna */
+  }
+}
